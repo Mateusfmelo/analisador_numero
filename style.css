@@ -1,9 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
 body {
-    background: rgb(70, 142, 236);
-    font: 15pt Arial;
+    margin: auto;
+    background: black;
 }
 
 header {
+    padding: 20px;
+    font-family: 'Bebas Neue', 'Times New Roman', Times, serif;
     color: white;
     text-align: center;
 }
@@ -12,31 +23,36 @@ select#flista {
     width: 150px;
 }
 
-/*section input[type="button"] {
-    display: block;
-    margin: 0 auto;
-}*/
 
 section {
+    font-family: 'Roboto Condensed', 'Times New Roman', Times, serif;
+    font-size: 20px;
     background: white;
     border-radius: 10px;
-    padding: 15px;
+    padding: 10px;
     width: 500px;
     margin: auto;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.363);
+    text-align: center;
 }
 
-footer {
+select {
+    margin: 15px;
+}
+
+.botao {
+    font-size: 0.5em;
+    background-color: black;
     color: white;
-    text-align: center;
-    font-style: italic;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 15px;
+    margin: 10px;
 }
 
 /*Adaptabilidade*/
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 425px) {
     section {
         text-align: center;
         width: 285px;
-        padding-left: 0;
     }
 }
